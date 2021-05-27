@@ -22,13 +22,7 @@ body.dark {
 body.dark h1 {
     color: var(--green);
 }
-body.dark a {
-    color: var(--green);
-}
 body.dark h1:hover {
-    color: var(--yellow);
-}
-body.dark a:hover {
     color: var(--yellow);
 }
 body.dark p {
@@ -105,14 +99,14 @@ header a {
 }
 
 /* Title */
-.title a, h1 {
+.title h1 {
     margin-top: 0;
     color: var(--bgbody);
     transition: all 0.4s ease;
     text-decoration: none;
     color: var(--bgbody);
 }
-.title a:hover, h1:hover {
+.title h1:hover {
     color: var(--red);
 }
 
