@@ -16,14 +16,20 @@ body {
 }
 body.dark {
     transition: background 0.8s linear;
-    background-color: var(--dark-blue);
+    background-color: var(--bgbody);
     /*background-image: url(../../img/leni_sleeping.png);*/
 }
 body.dark h1 {
-    color: var(--white);
+    color: var(--green);
 }
 body.dark a {
     color: var(--green);
+}
+body.dark h1:hover {
+    color: var(--yellow);
+}
+body.dark a:hover {
+    color: var(--yellow);
 }
 body.dark p {
     color: var(--green);
@@ -38,11 +44,13 @@ body.dark button:hover {
 :root {
     --green: #69b29a;
     --blue: #364156;
-    --dark-blue: #233042;
+    --bgbody: #233042;
+    --ligthblue: #30aab3;
     --yellow: #ffca30;
-    --grey: #393e46;
     --sun: #f39c12;
     --moon: #f1c40f;
+    --red: #fa3757;
+    --grey: #393e46;
     --white: #fcf8e6;
 }
 
@@ -56,7 +64,7 @@ header {
 }
 header a {
     text-decoration: none;
-    color: var(--dark-blue);
+    color: var(--bgbody);
 }
 .label {
     margin-top: 1rem;
@@ -97,11 +105,16 @@ header a {
 }
 
 /* Title */
-.title h1 {
+.title a, h1 {
     margin-top: 0;
-    color: var(--dark-blue);
+    color: var(--bgbody);
+    transition: all 0.4s ease;
+    text-decoration: none;
+    color: var(--bgbody);
 }
-
+.title a:hover, h1:hover {
+    color: var(--red);
+}
 
 /* Calculator */
 .container {
